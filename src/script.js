@@ -75,6 +75,21 @@ $('#inlineKeypadNum').keypad({target: $('#defaultKeypadNum'),
   ],
   onKeypress: function(key, value, inst) {
     if (key == '\r') { // Enter key
-      alert($(this).val());
+      // alert($(this).val());
+
+      var apiUrl = 'http://10.40.25.132/CallFloor?params='+ $(this).val();
+      fetch(apiUrl).then(response => {
+        return response.json();
+      }).then(data => {
+        $.keypad.CLEAR;
+        // Work with JSON data here
+        console.log(data);
+      }).catch(err => {
+        // Do something for an error here
+      });
+
+
+
+
     }
   }});
