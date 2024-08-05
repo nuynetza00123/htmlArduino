@@ -81,7 +81,6 @@ $('#inlineKeypadNum').keypad({target: $('#defaultKeypadNum'),
       fetch(apiUrl).then(response => {
         return response.json();
       }).then(data => {
-        $.keypad.CLEAR;
         // Work with JSON data here
         console.log(data);
       }).catch(err => {
