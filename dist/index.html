@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Finn ;D</title>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.0/animate.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="././style.scss">
+    <link rel='stylesheet' href='./jquery.keypad.css'>
+
+</head>
+
+<body>
+    <!-- partial:index.partial.html -->
+
+    <img src="/asset/FinnDS.png" alt="Flowers in Chania">
+
+    <button class="btn" id="btn">START</button>
+
+    <!-- Modal -->
+
+    <div class="modal" id="modal">
+        <!-- Modal background -->
+        <div class="bg"></div>
+
+
+        <div class="modal-container">
+            <div class="modal-top">
+
+                <i class="fas fa-times" id="close"></i>
+            </div>
+            <div class="modal-body">
+                <div class="pcss3t pcss3t-effect-scale pcss3t-theme-1">
+
+                    <input type="radio" name="pcss3t" checked id="tab1" class="tab-content-first">
+                    <label for="tab1">Connection</label>
+
+                    <input type="radio" name="pcss3t" id="tab2" class="tab-content-2">
+                    <label for="tab2">Lift</label>
+
+                    <input type="radio" name="pcss3t" id="tab3" class="tab-content-3">
+                    <label for="tab3">Gate</label>
+
+                    <!-- <i class="fas fa-times" id="close"></i> -->
+
+                    <ul>
+                        <li class="tab-content tab-content-first typography">
+                            <h1>Connect Api</h1>
+                            <div class="modal-form">
+                                <input id="ip" type="text" placeholder="IP" autocomplete="off" autofocus>
+                            </div>
+                            <div class="cta" style="display: flex;justify-content: center">
+                                <button id="setIp">Set Ip</button>
+                                <button id="Edit" hidden>Edit</button>
+                                <!-- <button>Cancel</button> -->
+                            </div>
+                        </li>
+
+                        <li class="tab-content tab-content-2 typography">
+
+                            <div class="modal-form">
+                                <div class="row text-center">
+                                    <div class="col-12">
+                                        <p>
+                                            <input type="text" id="defaultKeypadNum" placeholder="Floor"
+                                                style="height: 40px;width: 250px;font-size: 30px;-webkit-text-stroke: 1px black;text-align: center;border-radius: 10px;"
+                                                disabled>
+                                        </p>
+                                    </div>
+
+
+                                </div>
+                                <div class="row">
+                                    <div class="col-12" style="display: flex;margin-top: 15px;
+                                justify-content: space-around;">
+                                        <div id="inlineKeypadNum"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </li>
+                        <li class="tab-content tab-content-3 typography" style="display: flex;
+                        justify-content: center;
+                        align-items: center;">
+
+                            <div class="modal-form">
+
+                                <a class="btn2" id="btn2" href="#" style="text-decoration: none !important;font-size: 40px;color: white;">GATE</a>
+
+                            </div>
+
+                        </li>
+
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- partial -->
+
+    <script src='https://code.jquery.com/jquery-3.7.1.min.js'></script>
+    <script src='https://rawgit.com/kbwood/keypad/master/dist/js/jquery.plugin.min.js'></script>
+    <script src='https://rawgit.com/kbwood/keypad/master/dist/js/jquery.keypad.min.js'></script>
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
